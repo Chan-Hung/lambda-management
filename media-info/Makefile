@@ -3,8 +3,8 @@ ID = media-info
 # If you can override, exec `make LAMBDA_ENV=xxx`
 LAMBDA_ENV = dev
 TEMPLATE_FILE = template_$(LAMBDA_ENV).yaml
-BUCKET_NAME = cmp-s3-lambda-$(LAMBDA_ENV)
-STACK_NAME = cmp-cfn-lambda-$(ID)
+BUCKET_NAME = kevin-s3-lambda-$(LAMBDA_ENV)
+STACK_NAME = kevin-cfn-lambda-$(ID)
 
 all:
 	make clean

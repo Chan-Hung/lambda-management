@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  vod-media-info
+  kevin-vod-media-info
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
@@ -16,12 +16,12 @@ Resources:
     Properties:
       CodeUri: app/
       Handler: bootstrap
-      Role: arn:aws:iam::067057696393:role/CMPLambdaTestRole
+      Role: arn:aws:iam::774016615215:role/KevinGitHubActionsRole
       Runtime: provided.al2023
       Environment:
         Variables:
           ACTIVE_ENV: dev
-      FunctionName: cmp-lambda-vod-media-info
+      FunctionName: kevin-lambda-vod-media-info
 
   VodMediaInfoLogGroup:
     Type: AWS::Logs::LogGroup
