@@ -16,9 +16,9 @@ Resources:
     Properties:
       CodeUri: app/
       Handler: bootstrap
-      Role: arn:aws:iam::067057696393:role/CMPLambdaTestRole
+      Role: arn:aws:iam::774016615215:role/KevinGitHubActionsRole
       Runtime: provided.al2023
-      FunctionName: cmp-lambda-vod-convert
+      FunctionName: kevin-lambda-vod-convert
 
   VodConvertLogGroup:
     Type: AWS::Logs::LogGroup
