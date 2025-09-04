@@ -53,8 +53,8 @@ jobs:
           uses: aws-actions/configure-aws-credentials@v4
           with:
             aws-region: ${{ env.AWS_REGION }}
-            role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/CMPGitHubActionsRole
-            role-session-name: CMPGithubActionsSession
+            role-to-assume: arn:aws:iam::774016615215:role/KevinGitHubActionsRole
+            role-session-name: KevinGithubActionsSession
 
         # build & deploy
         - name: Build & Deploy by SAM
